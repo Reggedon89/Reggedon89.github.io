@@ -1,0 +1,196 @@
+html {
+  box-sizing:border-box;
+  font-family:'Slabo 27px', monospace;
+  color:#333;
+}
+
+*, *:before, *:after {
+  box-sizing:inherit;
+}
+
+html, body {
+  height:100%;
+}
+
+body {
+  
+  background: #7eff83;
+  background: -moz-linear-gradient(top, #7eff83 0%, #77ef7d 44%, #66cc71 100%);
+  background: -webkit-linear-gradient(top, #7eff83 0%,#77ef7d 44%,#66cc71 100%);
+  background: linear-gradient(to bottom, #7eff83 0%,#77ef7d 44%,#66cc71 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7eff83', endColorstr='#66cc71',GradientType=0 );
+  
+  /*background: #50a3a2;
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #2eca7f 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #2eca7f 100%);*/
+}
+
+.container {
+  width:900px;
+  height:600px;
+  margin:-300px 0 0 -450px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  display:flex;
+}
+
+.main {
+  border-radius:5px;
+  background:white;
+  width:430px;
+  box-shadow: 5px 10px 20px rgba(100,100,100,.3);
+  z-index:2;
+}
+
+.page {
+  border-radius:5px;
+  width:500px;
+  margin:30px 0 0 -30px;
+  box-shadow: 5px 10px 20px rgba(100,100,100,.3);
+  height:540px;
+  background:white;
+  z-index:1;
+  padding:20px 20px 20px 50px;
+  overflow:auto;
+}
+
+.bg {
+  background:url(bg.jpg);
+  background-size:cover;
+  background-position:center center;
+  overflow:hidden;
+  height:300px;
+  width:100%;
+  position:relative;
+  border-radius:5px 5px 0 0;
+}
+
+.bg:before, .bg:after {
+  content: '';
+  position: absolute;
+  left: -25%;
+  bottom: -198px;
+  width: 700px;
+  height: 200px;
+  background: #ffffff;
+  transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -o-transform: rotate(12deg);
+}
+
+.bg:after {
+  left: auto;
+  right: -25%;
+  transform: rotate(-6deg);
+  -webkit-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+}
+
+.image {
+  border-radius:50%;
+  border:4px solid white;
+  width:140px;
+  height:140px;
+  text-indent:-9999px;
+  position:absolute;
+  left:144px;
+  top:210px;
+  background:url(face.jpg);
+  background-size:cover;
+  background-position:center center;
+  box-shadow: 5px 10px 20px rgba(100,100,100,.3);
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+.name {
+  margin:100px 0 0 0;
+}
+
+.position {
+  color:#2eca7f;
+  font-weight:normal;
+}
+
+.social {
+  text-align:center;
+  width:350px;
+  margin:40px auto 0;
+  padding-top:30px;
+  display:flex;
+  justify-content: space-around;
+  border-top:1px solid #f4f4f4;
+}
+
+.social i {
+  font-size:20px;
+}
+
+.social a {
+  color:black;
+  transition: color .3s;
+}
+
+.social a:hover {
+  color:#2eca7f;
+}
+
+.heading:first-child {
+  margin-top:0;
+}
+
+.heading {
+  margin-top:70px;
+  padding-bottom:20px;
+  border-bottom:1px solid #f4f4f4;
+}
+
+.info {
+  display:flex;
+  align-items:center;
+  margin:5px 0;
+}
+
+section.info {
+  width:50%;
+}
+
+section.info p {
+  margin:0 10px;
+}
+
+.tech {
+  text-align:center;
+  margin-top:80px;
+  margin-left:-20px;
+}
+
+.tech i {
+  font-size:30px;
+  margin:0 20px;
+}
+
+.react {
+  color:rgb(86, 213, 250);
+}
+
+.node {
+  color:rgb(73, 147, 59);
+}
+
+.js {
+  color:rgb(230, 195, 44);
+}
+
+.html5 {
+  color: rgb(224, 67, 34);
+}
+
+.css3 {
+  color: rgb(33, 68, 224);
+}
