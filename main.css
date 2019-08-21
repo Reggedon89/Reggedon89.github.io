@@ -10,6 +10,8 @@ html {
 
 html, body {
   height:100%;
+  margin:0;
+  padding:0;
 }
 
 body {
@@ -137,12 +139,13 @@ h1, h3 {
   font-size:20px;
 }
 
-.social a {
+a {
   color:black;
   transition: color .3s;
+  text-decoration:none;
 }
 
-.social a:hover {
+a:hover {
   color:#2eca7f;
 }
 
@@ -199,4 +202,41 @@ section.info p {
 
 .css3 {
   color: rgb(33, 68, 224);
+}
+
+@media only screen and (max-width:900px) {
+  .container {
+    flex-direction:column;
+    width:100%;
+    margin:0;
+    top:auto;
+    left:auto;
+  }
+
+  .main {
+    width:100%;
+    border-radius:0;
+    padding-bottom:50px;
+    box-shadow:none;
+  }
+
+  .image {
+    left:50%;
+    margin-left:-70px;
+  }
+
+  .page {
+    height:auto;
+    overflow:visible;
+    width:100%;
+    margin:0;
+    border-top:0;
+    border-radius:0;
+    box-shadow:none;
+    padding:30px;
+  }
+
+  .info {
+    justify-content:center;
+  }
 }
